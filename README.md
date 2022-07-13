@@ -8,6 +8,7 @@
 74. Create a category list
 75. Add a new category
 76. AddCategory Component
+77. Communication between components
 
 ## Tests
 

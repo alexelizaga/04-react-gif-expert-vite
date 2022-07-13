@@ -1,8 +1,12 @@
-import { ChangeEvent, FormEvent, FormEventHandler, useState } from 'react';
+import { ChangeEvent, Dispatch, FormEvent, SetStateAction, useState } from 'react';
 
-export const AddCategory = () => {
+interface AddCategoryProps {
+    setCategories: Dispatch<SetStateAction<string[]>>
+}
 
-    const [ inputValue, setInputValue ] = useState<string>('One Punch')
+export const AddCategory = ({ setCategories }: AddCategoryProps) => {
+
+    const [ inputValue, setInputValue ] = useState<string>('')
 
     const onInputChange = ( {target}: ChangeEvent<HTMLInputElement> ) => {
         setInputValue(target.value)
@@ -10,7 +14,9 @@ export const AddCategory = () => {
 
     const onSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log(e);
+        if ( inputValue.trim().length <= 1 ) return;
+        setCategories( cat => [inputValue, ...cat] );
+        setInputValue('');
     }
 
     return (
