@@ -9,6 +9,7 @@
 75. Add a new category
 76. AddCategory Component
 77. Communication between components
+78. Emit event to parent component
 
 ## Tests
 

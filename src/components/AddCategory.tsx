@@ -1,10 +1,10 @@
 import { ChangeEvent, Dispatch, FormEvent, SetStateAction, useState } from 'react';
 
 interface AddCategoryProps {
-    setCategories: Dispatch<SetStateAction<string[]>>
+    onNewCategory: (value: any) => void;
 }
 
-export const AddCategory = ({ setCategories }: AddCategoryProps) => {
+export const AddCategory = ({ onNewCategory }: AddCategoryProps) => {
 
     const [ inputValue, setInputValue ] = useState<string>('')
 
@@ -15,7 +15,8 @@ export const AddCategory = ({ setCategories }: AddCategoryProps) => {
     const onSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if ( inputValue.trim().length <= 1 ) return;
-        setCategories( cat => [inputValue, ...cat] );
+    
+        onNewCategory( inputValue.trim() );
         setInputValue('');
     }
 
