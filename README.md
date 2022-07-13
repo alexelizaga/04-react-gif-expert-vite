@@ -12,6 +12,7 @@
 78. Emit event to parent component
 79. Check that names are unique
 80. GifGrid - New component
+81. Fetch API - Get the desired images
 
 ## Tests
 

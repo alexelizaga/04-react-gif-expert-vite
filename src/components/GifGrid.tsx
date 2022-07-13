@@ -1,8 +1,13 @@
+import { getGifs } from '../helpers/getGifs';
+
+
 interface GifGridProps {
     category: string;
 }
 
 export const GifGrid = ({ category }: GifGridProps) => {
+
+    getGifs(category);
 
     return (
         <>
