@@ -6,6 +6,7 @@
 72. Start proyect - GifExpertApp
 73. GifExpertApp - Component
 74. Create a category list
+75. Add a new category
 
 ## Tests
 
