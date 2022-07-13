@@ -4,6 +4,8 @@
 ## Commits
 
 72. Start proyect - GifExpertApp
+73. GifExpertApp - Component
+74. Create a category list
 
 ## Tests
 
