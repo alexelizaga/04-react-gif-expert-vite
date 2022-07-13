@@ -1,7 +1,8 @@
 import { GifsResponse, Datum } from '../interfaces/gifsResponse';
+import { Gifs } from '../interfaces/gifs';
 
-export const getGifs = async (category: string) => {
-    const url = `https://api.giphy.com/v1/gifs/search?api_key=4CLydWVgN5ipduT0Jt9a03FuFR1sYrHY&q=${category}&limit=20`;
+export const getGifs = async (category: string): Promise<Gifs[]> => {
+    const url = `https://api.giphy.com/v1/gifs/search?api_key=4CLydWVgN5ipduT0Jt9a03FuFR1sYrHY&q=${category}&limit=10`;
     const resp = await fetch(url);
     const { data } : GifsResponse = await resp.json();
 
@@ -12,4 +13,5 @@ export const getGifs = async (category: string) => {
     }));
 
     console.log( gifs );
+    return gifs;
 }

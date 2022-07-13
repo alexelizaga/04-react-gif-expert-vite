@@ -13,6 +13,8 @@
 79. Check that names are unique
 80. GifGrid - New component
 81. Fetch API - Get the desired images
+82. useEffect
+
 
 ## Tests
 
