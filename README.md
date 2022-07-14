@@ -18,6 +18,7 @@
 84. Show image titles
 85. className
 86. Custom Hook - useFetchGifs
+87. Show loading message
 
 
 ## Tests
