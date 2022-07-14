@@ -20,6 +20,7 @@
 86. Custom Hook - useFetchGifs
 87. Show loading message
 88. index.ts
+95. Github Pages
 
 
 ## Tests
