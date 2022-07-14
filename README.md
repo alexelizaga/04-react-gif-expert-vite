@@ -26,6 +26,7 @@
 95. Github Pages
 96. Fix Github Pages
 99. Config test environment
+101. Resolution of the task
 
 ## Tests
 
