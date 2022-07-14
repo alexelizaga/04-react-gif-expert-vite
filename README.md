@@ -30,6 +30,8 @@
 102. GifItem Test
 103. getGifs Test
 104. AddCategory Test
+105. For submit simulation
+106. Jest Functions
 
 ## Tests
 
@@ -37,6 +39,7 @@
 - expect
 - getByRole, getByText
 - fireEvent
+- jest.fn(), haveBeenCalledTimes, toHaveBeenCalledWith
 
 ## Good practices
 
