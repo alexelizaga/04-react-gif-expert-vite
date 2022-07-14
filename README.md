@@ -34,6 +34,7 @@
 106. Jest Functions
 107. GifGrid Test - Mock customHook
 108. Create a custom hook complete mock
+109. customHooks Tests
 
 ## Tests
 
@@ -43,6 +44,8 @@
 - fireEvent
 - jest.fn(), haveBeenCalledTimes, toHaveBeenCalledWith
 - jest.mock()
+- renderHook()
+- waitFor
 
 ## Good practices
 
