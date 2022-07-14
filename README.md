@@ -33,6 +33,7 @@
 105. For submit simulation
 106. Jest Functions
 107. GifGrid Test - Mock customHook
+108. Create a custom hook complete mock
 
 ## Tests
 
@@ -41,6 +42,7 @@
 - getByRole, getByText
 - fireEvent
 - jest.fn(), haveBeenCalledTimes, toHaveBeenCalledWith
+- jest.mock()
 
 ## Good practices
 

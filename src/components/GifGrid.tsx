@@ -6,8 +6,6 @@ interface GifGridProps {
     category: string;
 }
 
-
-
 export const GifGrid = ({ category }: GifGridProps) => {
 
     const { images, isLoading } = useFetchGifs(category);
