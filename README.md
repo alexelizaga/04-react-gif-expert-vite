@@ -14,6 +14,8 @@
 80. GifGrid - New component
 81. Fetch API - Get the desired images
 82. useEffect
+83. Fast production demo
+84. Show image titles
 
 
 ## Tests

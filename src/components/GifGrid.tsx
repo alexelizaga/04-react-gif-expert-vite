@@ -1,25 +1,37 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { getGifs } from '../helpers/getGifs';
+import { Gifs } from '../interfaces/gifs';
 
 
 interface GifGridProps {
     category: string;
 }
 
+
+
 export const GifGrid = ({ category }: GifGridProps) => {
 
-    const [counter, setCounter] = useState(10);
+    const [images, setImages] = useState<Gifs[]>([]);
+
+    const getImages = async (): Promise<void> => {
+        setImages(await getGifs(category));
+    }
 
     useEffect(() => {
-        getGifs(category);
+        getImages();
     }, []);
 
     return (
         <>
             <h3>{ category }</h3>
 
-            <h5>{ counter }</h5>
-            <button onClick={ () => setCounter(counter + 1) }>+1</button>
+            <ol>
+                {
+                    images.map(({ id, title }) => (
+                        <li key={id}>{ title }</li>
+                    ))
+                }
+            </ol>
         </>
     )
 }
