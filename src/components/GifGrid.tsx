@@ -1,8 +1,5 @@
-import { useEffect, useState } from 'react';
-
-import { getGifs } from '../helpers/getGifs';
 import { GifItem } from './GifItem';
-import { Gifs } from '../interfaces/gifs';
+import { useFetchGifs } from '../hooks/useFetchGifs';
 
 
 interface GifGridProps {
@@ -13,15 +10,7 @@ interface GifGridProps {
 
 export const GifGrid = ({ category }: GifGridProps) => {
 
-    const [images, setImages] = useState<Gifs[]>([]);
-
-    const getImages = async (): Promise<void> => {
-        setImages(await getGifs(category));
-    }
-
-    useEffect(() => {
-        getImages();
-    }, []);
+    const { images, isLoading } = useFetchGifs(category);
 
     return (
         <>
