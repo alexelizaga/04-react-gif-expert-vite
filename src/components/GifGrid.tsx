@@ -1,5 +1,5 @@
 import { GifItem } from './GifItem';
-import { useFetchGifs } from '../hooks/useFetchGifs';
+import { useFetchGifs } from '../hooks';
 
 
 interface GifGridProps {

@@ -1,4 +1,4 @@
-import { ChangeEvent, Dispatch, FormEvent, SetStateAction, useState } from 'react';
+import { ChangeEvent, FormEvent, useState } from 'react';
 
 interface AddCategoryProps {
     onNewCategory: (value: any) => void;
