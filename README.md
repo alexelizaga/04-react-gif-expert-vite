@@ -29,12 +29,14 @@
 101. Resolution of the task
 102. GifItem Test
 103. getGifs Test
+104. AddCategory Test
 
 ## Tests
 
 - toMatchSnapshot()
 - expect
 - getByRole, getByText
+- fireEvent
 
 ## Good practices
 

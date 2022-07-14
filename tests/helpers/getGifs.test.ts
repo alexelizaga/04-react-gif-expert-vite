@@ -1,5 +1,5 @@
-import { getGifs } from '../../../src/helpers/getGifs';
-import { Gifs } from '../../../src/interfaces/gifs';
+import { getGifs } from '../../src/helpers/getGifs';
+import { Gifs } from '../../src/interfaces/gifs';
 
 describe('Test getGifs', () => {
     

@@ -1,5 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from 'react';
 
+
 interface AddCategoryProps {
     onNewCategory: (value: any) => void;
 }
