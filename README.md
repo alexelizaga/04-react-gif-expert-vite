@@ -27,10 +27,11 @@
 96. Fix Github Pages
 99. Config test environment
 101. Resolution of the task
+102. GifItem Test
 
 ## Tests
 
-- 
+- toMatchSnapshot()
 
 ## Good practices
 

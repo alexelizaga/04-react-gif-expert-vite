@@ -18,4 +18,18 @@ describe('Test <GifItem />', () => {
         expect( container ).toMatchSnapshot();
     });
 
+    test('should show image with indicated url and alt', () => {
+        render( <GifItem id='testId' title={title} url={url} /> );
+        // screen.debug();
+        const { src, alt }: HTMLImageElement = screen.getByRole('img');
+        expect( src ).toBe(url);
+        expect( alt ).toBe(title);
+
+    });
+
+    test('should show title in the component', () => {
+        render( <GifItem id='testId' title={title} url={url} /> );
+        expect( screen.getByText( title ) ).toBeTruthy();
+    });
+
 });
