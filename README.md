@@ -16,6 +16,7 @@
 82. useEffect
 83. Fast production demo
 84. Show image titles
+85. className
 
 
 ## Tests
