@@ -1,6 +1,9 @@
 
 # GifExpertApp
 
+## Demo
+[Gif Expert App](https://alexelizaga.github.io/04-react-gif-expert-vite/)
+
 ## Commits
 
 72. Start proyect - GifExpertApp
@@ -21,6 +24,7 @@
 87. Show loading message
 88. index.ts
 95. Github Pages
+96. Fix Github Pages
 
 
 ## Tests
