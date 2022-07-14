@@ -28,10 +28,13 @@
 99. Config test environment
 101. Resolution of the task
 102. GifItem Test
+103. getGifs Test
 
 ## Tests
 
 - toMatchSnapshot()
+- expect
+- getByRole, getByText
 
 ## Good practices
 
